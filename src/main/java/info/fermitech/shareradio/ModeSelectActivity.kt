@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
-class ModeSelect : AppCompatActivity() {
+class ModeSelectActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -13,12 +13,12 @@ class ModeSelect : AppCompatActivity() {
     }
 
     fun onClientPress(view: View) {
-        val intent = Intent(this, Client::class.java)
+        val intent = Intent(this, ClientActivity::class.java)
         startActivity(intent)
     }
 
     fun onServerPress(view: View) {
-        val intent = Intent(this, Server::class.java)
+        val intent = Intent(this, ServerActivity::class.java)
         startActivity(intent)
     }
 }

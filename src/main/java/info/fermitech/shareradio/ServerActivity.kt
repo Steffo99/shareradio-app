@@ -9,7 +9,7 @@ import android.os.Bundle
 import android.os.IBinder
 import android.util.Log
 
-class Server : AppCompatActivity() {
+class ServerActivity : AppCompatActivity() {
 
     private val radioserviceconnection = object : ServiceConnection {
         override fun onServiceConnected(name: ComponentName?, service: IBinder?) {
